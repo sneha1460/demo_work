@@ -7,6 +7,7 @@ on:      # specifying the events when this workflow needs to be triggered. here 
  pull_request:
    branches:
      - main
+ workflow_dispatch:
 jobs: # need to specify the jobs
  hello: # name of the job
    runs-on: ubuntu_latest
