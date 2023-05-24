@@ -13,8 +13,14 @@ jobs: # need to specify the jobs
    steps:
     - uses: actions/checkout@v2 # here we can give the reusable workflows in our proj/marketplace/community. owners/repo name
     - name: hellowo      # name of the step
-    - run: echo "hello"  # to run shell command
-    - shell: bash       #which type of shell
+      run: echo "hello"  # to run shell command
+      shell: bash       #which type of shell
+ goodbye:
+   runs-on: ubuntu_latest
+   steps:
+     - run: echo "bye"
+       shell: bash
+  
     
     
  
