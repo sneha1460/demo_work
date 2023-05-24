@@ -1,0 +1,20 @@
+name: helloworld  # name of the workflow
+
+on:      # specifying the events when this workflow needs to be triggered. here pushing and pull req to main branch
+ push:
+  branches:
+      - main
+ pull_request:
+    branches:
+       - main
+jobs: # need to specify the jobs
+ hello: # name of the job
+   runs-on: ubuntu_latest
+   steps:
+    - uses: actions/checkout@v2 # here we can give the reusable workflows in our proj/marketplace/community. owners/repo name
+    - name: hellowo      # name of the step
+    - run: echo "hello"  # to run shell command
+    - shell: bash       #which type of shell
+    
+    
+ 
