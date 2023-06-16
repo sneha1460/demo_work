@@ -4,7 +4,6 @@ on:      # specifying the events when this workflow needs to be triggered. here 
  push:
   branches:
      - main
- pull_request:
    branches:
      - main
  workflow_dispatch:
